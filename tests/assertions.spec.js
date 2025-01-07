@@ -37,5 +37,5 @@ test('Assertion and Locator', async ({ page }) => {
 
   await page.getByRole('button', { name: 'finish' }).click();
 
-  await expect(page.getByText('THANK YOU FOR YOUR ORDER')).toBeVisible();
+  await expect(page.getByText('Thank you for your order!')).toBeVisible();
 });
