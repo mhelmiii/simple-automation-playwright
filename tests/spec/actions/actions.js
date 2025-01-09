@@ -6,16 +6,25 @@ export default class loginAction {
     this.page = page;
     this.locators = new locators();
 
+    // Login Action
     this.userName = page.locator(this.locators.inputUsername);
     this.password = page.locator(this.locators.inputPassword);
     this.buttonLogin = page.locator(this.locators.buttonLogin);
+
+    // ATC action
     this.atcItem = page.locator(this.locators.atcBackpack);
+    this.buttonCart = page.locator(this.locators.cartButton);
+
+    // Checkout action
+    this.buttonCheckout = page.locator(this.locators.checkoutButton);
+
+    // Input buyer information action
     this.firstName = page.locator(this.locators.fieldFirstName);
     this.lastName = page.locator(this.locators.fieldLastName);
     this.postCode = page.locator(this.locators.fieldPostCode);
-    this.buttonCart = page.locator(this.locators.cartButton);
+
+    // Finish order action
     this.buttonContinue = page.locator(this.locators.continueButton);
-    this.buttonCheckout = page.locator(this.locators.checkoutButton);
     this.buttonFinish = page.locator(this.locators.finishButton);
     this.wordingTYP = page.locator(this.locators.wordingTYP);
   }
